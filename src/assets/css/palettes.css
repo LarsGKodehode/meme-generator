@@ -1,0 +1,42 @@
+/* PALETTES CONSTANTS */
+:root {
+  --palette-success-500: #27B1E0; /* base success */
+
+  --palette-warning-500: ; /* base warning */
+
+  --palette-error-500: #E00E03; /* base error */
+
+  --palette-neutral-500: #CBD4DF; /* base neutral */
+
+  --palette-white: #FFFFFF; /* constant */
+
+  --palette-black: #000000; /* constant */
+}
+
+/* PALETTE THEMES */
+body[data-theme = "bright"] {
+  /* bright theme */
+  --palette-primary-400: ; /* brighter */
+  --palette-primary-500: #5D187E; /* base */
+  --palette-primary-600: ; /* darker */
+
+  --palette-primary-400-text: ; /* brighter */
+  --palette-primary-500-text: #00D0FD; /* base */
+  --palette-primary-600-text: ; /* darker */
+  
+  --palette-secondary-400: ; /* brighter */
+  --palette-secondary-500: #E0B45A; /* base */
+  --palette-secondary-600: ; /* darker */
+
+  --palette-secondary-400-text: ; /* brighter */
+  --palette-secondary-500-text: #003340; /* base */
+  --palette-secondary-600-text: ; /* darker */
+
+  --palette-tertiary-400: ; /* brighter */
+  --palette-tertiary-500: #41ED9B; /* base */
+  --palette-tertiary-600: ; /* darker */
+
+  --palette-tertiary-400-text: ; /* brighter */
+  --palette-tertiary-500-text: #001820; /* base */
+  --palette-tertiary-600-text: ; /* darker */
+}

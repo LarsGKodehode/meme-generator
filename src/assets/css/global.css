@@ -1,0 +1,26 @@
+/* Global spacing */
+:root {
+  --spacing-huge: 10em;
+  --spacing-large: 6em;
+  --spacing-medium: 4em;
+  --spacing-small: 2em;
+  --spacing-tiny: .5em;
+}
+
+/* Site wide styling */
+* {
+  /* Saner layout defaults */
+  box-sizing: border-box;
+}
+
+/* Tweaks */
+html, body {
+  /* Getting rid of unwanted margins */
+  margin: 0px;
+
+  /* Use all the real estate */
+  height: 100%;
+}
+#root, .App {
+  height: 100%;
+}

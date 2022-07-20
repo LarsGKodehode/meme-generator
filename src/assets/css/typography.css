@@ -1,0 +1,37 @@
+/* Typography */
+@font-face {
+  font-family: 'Stint Ultra Condensed', cursive;
+  src: url("../fonts/StintUltraCondensed-Regular.ttf");
+}
+
+* {
+  /* Fonts */
+  font-family: "Stint Ultra Condensed", sans-serif;
+}
+
+.font-huge {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.font-large {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.font-big {
+  font-size: 24px;
+  margin: 0;
+}
+
+.font-normal {
+  font-size: 16px;
+  margin: 0;
+}
+
+.font-small {
+  font-size: 10px;
+  margin: 0;
+}
