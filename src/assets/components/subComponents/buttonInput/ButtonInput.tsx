@@ -1,18 +1,13 @@
 // CSS
 import styles from './ButtonInput.module.css';
 
+// Interface
 interface ButtonCreateInfo {
   text: string,
 };
 
-const buttonProps: ButtonCreateInfo = {
-  text: 'Generate new meme'
-}
 
 function Button(props: ButtonCreateInfo) {
-  // TEMP
-  props = buttonProps;
-
   const {
     text,
   } = props

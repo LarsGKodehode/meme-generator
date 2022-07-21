@@ -1,7 +1,5 @@
 // CSS
 import styles from './Output.module.css';
-// Image Path
-import imagePath from '../../images/meme-sample.jpg';
 
 interface OutputProps {
   textTop: string,
@@ -10,17 +8,8 @@ interface OutputProps {
   memeAlt: string,
 };
 
-const outputProps: OutputProps = {
-  textTop: 'ES6',
-  textBottom: `But it ain't Neurosurgery`,
-  imageURL: imagePath,
-  memeAlt: `ES6 might be hard to learn, but there exists stuff that's harder`,
-}
 
 function Output(props: OutputProps) {
-  // TEMP
-  props = outputProps;
-
   const {
     textTop,
     textBottom,
