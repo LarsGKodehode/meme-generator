@@ -1,5 +1,6 @@
 .input-wrapper {
   /* self placement */
+  justify-self: flex-end;
   margin-top: auto;
 
   /* content display */
