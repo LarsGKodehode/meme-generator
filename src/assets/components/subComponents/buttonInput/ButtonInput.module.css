@@ -1,0 +1,17 @@
+.button-wrapper {
+  /* form */
+
+  /* color */
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+  /* font */
+  font-size: inherit;
+}
+
+.button-wrapper:hover {
+  filter: drop-shadow(0px 0px 20px var(--palette-success-500));
+}
+
+.button-wrapper:active {
+  box-shadow: inset 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+}

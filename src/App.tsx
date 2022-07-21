@@ -1,12 +1,22 @@
+// Components
+import Header from './assets/components/header/Header';
+import Output from './assets/components/Output/Output';
+import Input from './assets/components/Input/Input';
+
 // CSS
 import './App.css';
+
 
 function App() {
 
   return (
-    <div className='App'>
+    <main className='App'>
 
-    </div>
+      <Header />
+      <Output />
+      <Input />
+
+    </main>
   );
 };
 
