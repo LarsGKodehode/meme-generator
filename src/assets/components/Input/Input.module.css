@@ -1,0 +1,21 @@
+.input-wrapper {
+  /* self placement */
+  margin-top: auto;
+
+  /* content display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* form */
+  width: 100%;
+  max-width: 100%;
+  padding: var(--spacing-small) var(--spacing-medium);
+
+  /* color */
+  background-color: var(--palette-tertiary-500);
+}
+.input-wrapper > * {
+  margin: var(--spacing-small) 0;
+  width: 80%;
+}

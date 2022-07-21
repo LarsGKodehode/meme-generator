@@ -1,0 +1,15 @@
+.button-wrapper {
+  /* form */
+
+  /* color */
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+
+  /* font */
+  font-size: inherit;
+}
+
+.button-wrapper:hover {
+}
+
+.button-wrapper:active {
+}

@@ -1,0 +1,24 @@
+.header-wrapper {
+  /* content display */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* form */
+  width: 100%;
+  padding: var(--spacing-small);
+
+  /* color */
+  background-color: var(--palette-secondary-500);
+}
+.header-wrapper > * {
+  margin: 0 var(--spacing-tiny);
+}
+
+.svg {
+  height: 100%;
+}
+
+.text {
+
+}

@@ -1,10 +1,16 @@
 /* Global spacing */
 :root {
-  --spacing-huge: 10em;
+  /* --spacing-huge: 10em;
   --spacing-large: 6em;
   --spacing-medium: 4em;
   --spacing-small: 2em;
-  --spacing-tiny: .5em;
+  --spacing-tiny: .5em; */
+
+  --spacing-huge: 50px;
+  --spacing-large: 40xp;
+  --spacing-medium: 20px;
+  --spacing-small: 10px;
+  --spacing-tiny: 5px;
 }
 
 /* Site wide styling */

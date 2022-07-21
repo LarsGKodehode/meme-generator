@@ -17,7 +17,7 @@
 body[data-theme = "bright"] {
   /* bright theme */
   --palette-primary-400: ; /* brighter */
-  --palette-primary-500: #5D187E; /* base */
+  --palette-primary-500: #180A1E; /* base */
   --palette-primary-600: ; /* darker */
 
   --palette-primary-400-text: ; /* brighter */
@@ -25,7 +25,7 @@ body[data-theme = "bright"] {
   --palette-primary-600-text: ; /* darker */
   
   --palette-secondary-400: ; /* brighter */
-  --palette-secondary-500: #E0B45A; /* base */
+  --palette-secondary-500: #933BC9; /* base */
   --palette-secondary-600: ; /* darker */
 
   --palette-secondary-400-text: ; /* brighter */
@@ -33,7 +33,7 @@ body[data-theme = "bright"] {
   --palette-secondary-600-text: ; /* darker */
 
   --palette-tertiary-400: ; /* brighter */
-  --palette-tertiary-500: #41ED9B; /* base */
+  --palette-tertiary-500: #FFE605; /* base */
   --palette-tertiary-600: ; /* darker */
 
   --palette-tertiary-400-text: ; /* brighter */
