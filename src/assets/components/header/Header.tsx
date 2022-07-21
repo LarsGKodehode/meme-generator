@@ -1,7 +1,5 @@
 // CSS
 import styles from './Header.module.css';
-// SVG Path
-import svgURL from '../../images/Peace.svg';
 
 
 // Interfaces
@@ -15,22 +13,9 @@ interface Props {
   svg: SVGCreateInfo,
 };
 
-// Propss definition
-const headerSVG: SVGCreateInfo = {
-  data: svgURL, // path to svg
-  type: 'image/svg+xml',
-};
-
-const headerProps: Props = {
-  text: 'Meme Generator',
-  svg: headerSVG,
-};
-
 
 // COMPONENT
 function Header(props: Props) {
-  props = headerProps;
-
   const {
     svg: svgInfo,
     text,
