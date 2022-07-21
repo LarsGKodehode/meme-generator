@@ -11,7 +11,7 @@
   /* form */
   width: 100%;
   max-width: 100%;
-  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-small) var(--spacing-medium) var(--spacing-huge);
 
   /* color */
   background-color: var(--palette-tertiary-500);
