@@ -4,6 +4,7 @@ import ButtonInput from '../subComponents/buttonInput/ButtonInput';
 
 // CSS
 import styles from './Input.module.css';
+import { BaseSyntheticEvent } from 'react';
 
 // Local props definition
 // Text input
@@ -22,9 +23,15 @@ const buttonInput = {
 
 // COMPONENT
 function Input() {
+
+  function handleSubmit(event: BaseSyntheticEvent) {
+    event.preventDefault();
+  };
+
+
   return(
 
-    <form className={[styles['input-wrapper'], 'font-large'].join(' ')}>
+    <form onSubmit={handleSubmit} className={[styles['input-wrapper'], 'font-large'].join(' ')}>
 
       <TextInput {...textInputPropsTop}/>
       <TextInput {...textInputPropsBottom}/>
