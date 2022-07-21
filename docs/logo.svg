@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" preserveAspectRatio="xMidYMid meet" viewBox="0 0 400 400">
+  <circle cx="125" cy="250" r="125" fill="blue"></circle>
+  <circle cx="200" cy="150" r="125" fill="red"></circle>
+  <circle cx="275" cy="250" r="125" fill="yellow"></circle>
+  <!-- <circle cx="50" cy="50" r="35" fill="black" fill-opacity="0.5"></circle> -->
+  <!-- <path fill="green" stroke="red"
+  d="
+  M 20 20
+  l 20 60
+  l 40 20
+  "
+  /> -->
+</svg>
