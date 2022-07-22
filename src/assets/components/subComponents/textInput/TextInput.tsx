@@ -7,6 +7,7 @@ interface TextInputCreateInfo {
 };
 
 
+// COMPONENT
 function Text(props: TextInputCreateInfo) {
   const {
     placeholder,
