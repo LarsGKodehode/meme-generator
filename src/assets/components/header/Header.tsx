@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 
 // Interfaces
 interface SVGCreateInfo {
-  data: string, // path to svg
+  data: string, // Path to svg
   type: string, // 'image/svg+xml' for svg
 };
 
