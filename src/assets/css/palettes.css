@@ -14,7 +14,7 @@
 }
 
 /* PALETTE THEMES */
-body[data-theme = "bright"] {
+.App[data-theme = "bright"] {
   /* bright theme */
   --palette-primary-500: #180A1E; /* base */
 
