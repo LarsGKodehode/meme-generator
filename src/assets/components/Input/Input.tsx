@@ -4,6 +4,8 @@ import ButtonInput from '../subComponents/buttonInput/ButtonInput';
 
 // CSS
 import styles from './Input.module.css';
+
+// Interfaces External
 import { BaseSyntheticEvent } from 'react';
 
 // Local props definition
@@ -18,12 +20,13 @@ const textInputPropsBottom = {
 // ButtonInput
 const buttonInput = {
   text: 'Generate new meme'
-}
+};
 
 
 // COMPONENT
 function Input() {
 
+  // Handles the input submit functionality
   function handleSubmit(event: BaseSyntheticEvent) {
     event.preventDefault();
   };

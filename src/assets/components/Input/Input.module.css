@@ -1,20 +1,20 @@
 .input-wrapper {
-  /* self placement */
+  /* Self placement */
   justify-self: flex-end;
   margin-top: auto;
 
-  /* content display */
+  /* Content display */
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  /* form */
+  /* Form */
   width: 100%;
   max-width: 100%;
   padding: var(--spacing-small) var(--spacing-medium) var(--spacing-huge);
   flex-grow: 1;
 
-  /* color */
+  /* Color */
   background-color: var(--palette-tertiary-500);
 }
 .input-wrapper > * {

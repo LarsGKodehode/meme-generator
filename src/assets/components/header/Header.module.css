@@ -1,14 +1,14 @@
 .header-wrapper {
-  /* content display */
+  /* Content display */
   display: flex;
   justify-content: center;
   align-items: center;
   
-  /* form */
+  /* Form */
   width: 100%;
   padding: var(--spacing-small);
 
-  /* color */
+  /* Color */
   background-color: var(--palette-secondary-500);
 }
 .header-wrapper > * {

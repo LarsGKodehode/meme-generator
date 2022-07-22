@@ -1,7 +1,7 @@
 .text-input-wrapper {
-  /* form */
+  /* Form */
   padding: var(--spacing-small) var(--spacing-medium);
 
-  /* font size */
+  /* Font size */
   font-size: inherit;
 }
