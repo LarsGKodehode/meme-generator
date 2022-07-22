@@ -8,8 +8,8 @@
   /* Form */
   width: 100%;
   height: auto;
-  /* Max-height: 85%; */
-  flex-grow: 2;
+  max-height: 65vh; /* this makes the responsiveness of the page better */
+  flex-grow: 3;
 
   /* Colors */
   background-color: var(--palette-primary-500);

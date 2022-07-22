@@ -12,6 +12,7 @@
   width: 100%;
   max-width: 100%;
   padding: var(--spacing-small) var(--spacing-medium) var(--spacing-huge);
+  flex-grow: 1;
 
   /* Color */
   background-color: var(--palette-tertiary-500);
