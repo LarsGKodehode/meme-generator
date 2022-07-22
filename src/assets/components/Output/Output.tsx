@@ -1,6 +1,7 @@
 // CSS
 import styles from './Output.module.css';
 
+// Interfaces
 interface OutputProps {
   textTop: string,
   textBottom: string,
@@ -9,6 +10,7 @@ interface OutputProps {
 };
 
 
+// COMPONENT
 function Output(props: OutputProps) {
   const {
     textTop,
@@ -16,8 +18,6 @@ function Output(props: OutputProps) {
     imageURL,
     memeAlt,
   } = props;
-
-  console.log()
 
   return(
     <section className={styles['output-wrapper']}>
