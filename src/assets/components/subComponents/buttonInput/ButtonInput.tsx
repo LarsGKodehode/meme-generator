@@ -7,6 +7,7 @@ interface ButtonCreateInfo {
 };
 
 
+// COMPONENT
 function Button(props: ButtonCreateInfo) {
   const {
     text,
