@@ -37,7 +37,7 @@ const outputProps = {
 function App() {
 
   return (
-    <main className='App'>
+    <main className='App' data-theme="bright">
 
       <Header {...headerProps}/>
       <Output {...outputProps}/>
