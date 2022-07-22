@@ -7,7 +7,7 @@ import Input from './assets/components/Input/Input';
 import './App.css';
 
 
-// Local props definition
+// ===== Local props definition =====
 
 // header
 // SVG Path
@@ -16,7 +16,7 @@ import svgURL from './assets/images/Peace.svg';
 const headerProps = {
   text: 'Meme Generator',
   svg: {
-    data: svgURL, // path to svg
+    data: svgURL, // Path to svg
     type: 'image/svg+xml',
     },
 };
@@ -33,6 +33,7 @@ const outputProps = {
 };
 
 
+// COMPONENT
 function App() {
 
   return (
