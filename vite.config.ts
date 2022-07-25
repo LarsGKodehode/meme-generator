@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
 
   build: {
-    outDir: './docs',
+    outDir: './release',
   },
 
   base: '/meme-generator/',
