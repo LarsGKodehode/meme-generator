@@ -19,12 +19,38 @@ function Output(props: OutputProps) {
     memeAlt,
   } = props;
 
+  // DOM
   return(
-    <section className={styles['output-wrapper']}>
-      <article className={styles['meme']}>
-        <img className={styles['image']} src={imageURL} alt={memeAlt} />
-        <h1 className={[styles['text-top'], 'font-large'].join(' ')}>{textTop}</h1>
-        <h1 className={[styles['text-bottom'], 'font-large'].join(' ')}>{textBottom}</h1>
+    <section
+      className={styles['output-wrapper']}
+    >
+      <article
+        className={styles['meme']}
+      >
+
+        <img
+          className={styles['image']}
+          src={imageURL}
+          alt={memeAlt}
+        />
+
+        <h1
+        className={
+          [
+            styles['text-top'],
+            'font-large'
+          ].join(' ')
+        }
+        >{textTop}</h1>
+
+        <h1
+        className={
+          [
+            styles['text-bottom'],
+            'font-large'
+          ].join(' ')
+        }>{textBottom}</h1>
+
       </article>
     </section>
   );
