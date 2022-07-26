@@ -26,7 +26,6 @@ function App() {
   );
 
   function handleStateChange(event: BaseSyntheticEvent) {
-    console.log(data);
     const { name, value } = event.target;
     setData((previousData: ComponentState): ComponentState => {
       return {
