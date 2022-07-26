@@ -28,6 +28,7 @@ function Text(props: TextInputCreateInfo) {
       placeholder={placeholder}
       className={styles['text-input-wrapper']}
       onChange={handleInput}
+      value={data[name]}
     >
     </textarea>
   );

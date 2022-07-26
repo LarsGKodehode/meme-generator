@@ -18,10 +18,15 @@ import imagePath from './assets/images/meme-sample.jpg';
 // COMPONENT
 function App() {
   // State managment
-  const [data, setData] = useState();
+  const [data, setData] = useState(
+    {
+      textInputTop: "",
+      textInputBottom: "",
+    }
+  );
 
   function handleStateChange(event: BaseSyntheticEvent) {
-    console.log(event.target.name + ": " + event.target.value);
+    console.log(data);
     const { name, value } = event.target;
     setData((previousData: ComponentState): ComponentState => {
       return {
