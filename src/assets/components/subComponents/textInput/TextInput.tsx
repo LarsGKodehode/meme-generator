@@ -1,5 +1,5 @@
 // React
-import { ChangeEventHandler } from 'react';
+import { ChangeEventHandler, ComponentState } from 'react';
 
 // CSS
 import styles from './TextInput.module.css';
@@ -9,6 +9,7 @@ interface TextInputCreateInfo {
   name: string,
   placeholder: string,
   handleInput: ChangeEventHandler,
+  data: ComponentState,
 };
 
 
@@ -18,6 +19,7 @@ function Text(props: TextInputCreateInfo) {
     name,
     placeholder,
     handleInput,
+    data,
   } = props;
 
   return(

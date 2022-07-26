@@ -33,11 +33,13 @@ function Input(props: InputProps) {
     name: 'textInputTop',
     placeholder: 'Type top text here',
     handleInput: handleInput,
+    data: data,
   };
   const textInputPropsBottom = {
     name: 'textBottomTop',
     placeholder: 'Type bottom text here',
     handleInput: handleInput,
+    data: data,
   };
 
   // ButtonInput
