@@ -43,12 +43,17 @@ function App() {
     memeAlt: `ES6 might be hard to learn, but there exists stuff that's harder`,
   };
 
+  // Input
+  const inputProps = {
+    handleInput: handleStateChange,
+  };
+
   return (
     <main className='App' data-theme="bright">
 
       <Header {...headerProps}/>
       <Output {...outputProps}/>
-      <Input />
+      <Input {...inputProps}/>
 
     </main>
   );

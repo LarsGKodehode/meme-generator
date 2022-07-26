@@ -9,8 +9,14 @@ import styles from './Input.module.css';
 import { BaseSyntheticEvent } from 'react';
 
 
+// Interface
+interface InputProps {
+  handleInput: Function,
+};
+
 // COMPONENT
-function Input() {
+function Input(props: InputProps) {
+  const { handleInput } = props;
 
   // Handles the input submit functionality
   function handleSubmit(event: BaseSyntheticEvent) {
