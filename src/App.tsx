@@ -46,6 +46,7 @@ function App() {
   // Input
   const inputProps = {
     handleInput: handleStateChange,
+    data: data
   };
 
   return (

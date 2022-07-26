@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, ChangeEventHandler } from 'react';
+import { BaseSyntheticEvent, ChangeEventHandler, ComponentState } from 'react';
 
 // Components
 import TextInput from '../subComponents/textInput/TextInput';
@@ -12,11 +12,15 @@ import styles from './Input.module.css';
 // Interface
 interface InputProps {
   handleInput: ChangeEventHandler,
+  data: ComponentState,
 };
 
 // COMPONENT
 function Input(props: InputProps) {
-  const { handleInput } = props;
+  const {
+    handleInput,
+    data,
+  } = props;
 
   // Handles the input submit functionality
   function handleSubmit(event: BaseSyntheticEvent) {
