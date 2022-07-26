@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, ComponentState, EffectCallback, useEffect, useState } from 'react';
+import { BaseSyntheticEvent, ComponentState, EffectCallback, useEffect, useState, StrictMode } from 'react';
 
 // Components
 import Header from './assets/components/header/Header';
@@ -66,7 +66,6 @@ function App() {
 
   function handleNewImages(response: ImgflipResponse): void {
     if(response.success) {
-      console.log(response.data.memes)
       setImageData((): any => response.data.memes)
     }
   };
@@ -97,6 +96,7 @@ function App() {
   };
 
   return (
+  <StrictMode>
     <main className='App' data-theme="bright">
 
       <Header {...headerProps}/>
@@ -104,6 +104,7 @@ function App() {
       <Input {...inputProps}/>
 
     </main>
+  </StrictMode>
   );
 };
 
