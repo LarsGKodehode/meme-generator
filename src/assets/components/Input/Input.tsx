@@ -26,10 +26,12 @@ function Input(props: InputProps) {
   // Props definition
   // Text input
   const textInputPropsTop = {
+    name: 'textInputTop',
     placeholder: 'Type top text here',
     handleInput: handleInput,
   };
   const textInputPropsBottom = {
+    name: 'textBottomTop',
     placeholder: 'Type bottom text here',
     handleInput: handleInput,
   };

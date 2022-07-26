@@ -22,7 +22,7 @@ function App() {
   const [data, setData] = useState();
 
   function handleStateChange(event: BaseSyntheticEvent) {
-    console.log(arguments);
+    console.log(event.target);
   };
 
   // ===== Props definition =====
