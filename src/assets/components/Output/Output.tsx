@@ -29,7 +29,6 @@ function Output(props: OutputProps) {
         <img
           className={styles['image']}
           src={imageURL}
-          alt={memeAlt}
         />
 
         <h1
