@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, ComponentState, useState } from 'react';
+import { BaseSyntheticEvent, ComponentState, useEffect, useState, StrictMode } from 'react';
 
 // Components
 import Header from './assets/components/header/Header';
@@ -11,8 +11,26 @@ import './App.css';
 
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
-// Image Path
-import imagePath from './assets/images/meme-sample.jpg';
+
+
+// ===== External API calling =====
+// Image web API
+const imageURL = "https://api.imgflip.com/get_memes";
+// Imgflip API interface
+interface ImgflipResponse extends Response {
+  success: boolean,
+  data: Memes,
+};
+interface Memes {
+  memes: [
+    id: string,
+    name: string,
+    url: string,
+    width: number,
+    height: number,
+    box_count: number
+  ]
+};
 
 
 // COMPONENT
@@ -24,6 +42,11 @@ function App() {
       textInputBottom: "",
     }
   );
+  const [imageData, setImageData] = useState(
+    {
+      imageData: [],
+    }
+  );
 
   function handleStateChange(event: BaseSyntheticEvent) {
     const { name, value } = event.target;
@@ -33,6 +56,20 @@ function App() {
         [name]: value,
       };
     });
+  };
+
+  useEffect(() => {
+    fetch(imageURL)
+      .then((response => response.json()))
+      .then((parsed) => {
+        handleNewImages(parsed);
+      });
+  }, []);
+
+  function handleNewImages(response: ImgflipResponse): void {
+    if(response.success) {
+      setImageData((): any => response.data.memes)
+    }
   };
 
   
@@ -47,11 +84,11 @@ function App() {
   };
 
   // Output
+  console.log(imageData)
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
-    imageURL: imagePath,
-    memeAlt: `ES6 might be hard to learn, but there exists stuff that's harder`,
+    imageURL: imageData,
   };
 
   // Input
@@ -61,6 +98,7 @@ function App() {
   };
 
   return (
+  <StrictMode>
     <main className='App' data-theme="bright">
 
       <Header {...headerProps}/>
@@ -68,6 +106,7 @@ function App() {
       <Input {...inputProps}/>
 
     </main>
+  </StrictMode>
   );
 };
 

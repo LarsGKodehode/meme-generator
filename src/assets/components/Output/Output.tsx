@@ -6,7 +6,6 @@ interface OutputProps {
   textTop: string,
   textBottom: string,
   imageURL: string,
-  memeAlt: string,
 };
 
 
@@ -16,7 +15,6 @@ function Output(props: OutputProps) {
     textTop,
     textBottom,
     imageURL,
-    memeAlt,
   } = props;
 
   // DOM
@@ -31,7 +29,6 @@ function Output(props: OutputProps) {
         <img
           className={styles['image']}
           src={imageURL}
-          alt={memeAlt}
         />
 
         <h1
