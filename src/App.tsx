@@ -15,7 +15,7 @@ import imagePath from './assets/images/meme-sample.jpg';
 
 // COMPONENT
 function App() {
-  // ===== Local props definition =====
+  // ===== Props definition =====
   // header
   const headerProps = {
     text: 'Meme Generator',

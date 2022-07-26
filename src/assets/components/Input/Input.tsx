@@ -17,7 +17,7 @@ function Input() {
     event.preventDefault();
   };
 
-  // Local props definition
+  // Props definition
   // Text input
   const textInputPropsTop = {
     placeholder: 'Type top text here'
