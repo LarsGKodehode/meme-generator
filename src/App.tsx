@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, useState } from 'react';
+import { BaseSyntheticEvent, ComponentState, useState } from 'react';
 
 // Components
 import Header from './assets/components/header/Header';
@@ -23,8 +23,16 @@ function App() {
 
   function handleStateChange(event: BaseSyntheticEvent) {
     console.log(event.target.name + ": " + event.target.value);
+    const { name, value } = event.target;
+    setData((previousData: ComponentState): ComponentState => {
+      return {
+        ...previousData,
+        [name]: value,
+      };
+    });
   };
 
+  
   // ===== Props definition =====
   // header
   const headerProps = {

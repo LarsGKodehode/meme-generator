@@ -36,7 +36,7 @@ function Input(props: InputProps) {
     data: data,
   };
   const textInputPropsBottom = {
-    name: 'textBottomTop',
+    name: 'textInputBottom',
     placeholder: 'Type bottom text here',
     handleInput: handleInput,
     data: data,
