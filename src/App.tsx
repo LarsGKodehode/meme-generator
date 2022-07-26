@@ -48,8 +48,8 @@ function App() {
 
   // Output
   const outputProps = {
-    textTop: 'ES6',
-    textBottom: `But it ain't Neurosurgery`,
+    textTop: data.textInputTop,
+    textBottom: data.textInputBottom,
     imageURL: imagePath,
     memeAlt: `ES6 might be hard to learn, but there exists stuff that's harder`,
   };
