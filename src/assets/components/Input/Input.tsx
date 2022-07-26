@@ -1,3 +1,6 @@
+// React
+import { BaseSyntheticEvent, ChangeEventHandler } from 'react';
+
 // Components
 import TextInput from '../subComponents/textInput/TextInput';
 import ButtonInput from '../subComponents/buttonInput/ButtonInput';
@@ -5,13 +8,10 @@ import ButtonInput from '../subComponents/buttonInput/ButtonInput';
 // CSS
 import styles from './Input.module.css';
 
-// Interfaces External
-import { BaseSyntheticEvent } from 'react';
-
 
 // Interface
 interface InputProps {
-  handleInput: Function,
+  handleInput: ChangeEventHandler,
 };
 
 // COMPONENT
@@ -26,10 +26,12 @@ function Input(props: InputProps) {
   // Props definition
   // Text input
   const textInputPropsTop = {
-    placeholder: 'Type top text here'
+    placeholder: 'Type top text here',
+    handleInput: handleInput,
   };
   const textInputPropsBottom = {
-    placeholder: 'Type bottom text here'
+    placeholder: 'Type bottom text here',
+    handleInput: handleInput,
   };
 
   // ButtonInput

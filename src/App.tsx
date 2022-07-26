@@ -1,5 +1,5 @@
 // React
-import { useState } from 'react';
+import { BaseSyntheticEvent, useState } from 'react';
 
 // Components
 import Header from './assets/components/header/Header';
@@ -21,7 +21,7 @@ function App() {
   // State managment
   const [data, setData] = useState();
 
-  function handleStateChange() {
+  function handleStateChange(event: BaseSyntheticEvent) {
     console.log(arguments);
   };
 
