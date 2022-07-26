@@ -8,20 +8,6 @@ import styles from './Input.module.css';
 // Interfaces External
 import { BaseSyntheticEvent } from 'react';
 
-// Local props definition
-// Text input
-const textInputPropsTop = {
-  placeholder: 'Type top text here'
-};
-const textInputPropsBottom = {
-  placeholder: 'Type bottom text here'
-};
-
-// ButtonInput
-const buttonInput = {
-  text: 'Generate new meme'
-};
-
 
 // COMPONENT
 function Input() {
@@ -31,7 +17,21 @@ function Input() {
     event.preventDefault();
   };
 
+  // Local props definition
+  // Text input
+  const textInputPropsTop = {
+    placeholder: 'Type top text here'
+  };
+  const textInputPropsBottom = {
+    placeholder: 'Type bottom text here'
+  };
 
+  // ButtonInput
+  const buttonInput = {
+    text: 'Generate new meme'
+  };
+
+  // DOM
   return(
 
     <form onSubmit={handleSubmit} className={[styles['input-wrapper'], 'font-large'].join(' ')}>
