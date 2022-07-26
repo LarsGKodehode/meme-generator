@@ -9,6 +9,7 @@ class randomInt {
 
   constructor(seed: number) {
     this._state = seed;
+    this.next();
   };
 
   public get state() {
