@@ -44,7 +44,13 @@ function Input(props: InputProps) {
   // DOM
   return(
 
-    <form onSubmit={handleSubmit} className={[styles['input-wrapper'], 'font-large'].join(' ')}>
+    <form
+      onSubmit={handleSubmit}
+      className={
+        [styles['input-wrapper'],
+          'font-large',
+        ].join(' '),
+      }>
 
       <TextInput {...textInputPropsTop}/>
       <TextInput {...textInputPropsBottom}/>
