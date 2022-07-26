@@ -1,3 +1,6 @@
+// React
+import { useState } from 'react';
+
 // Components
 import Header from './assets/components/header/Header';
 import Output from './assets/components/Output/Output';
@@ -15,6 +18,13 @@ import imagePath from './assets/images/meme-sample.jpg';
 
 // COMPONENT
 function App() {
+  // State managment
+  const [data, setData] = useState();
+
+  function handleStateChange() {
+    console.log(arguments);
+  };
+
   // ===== Props definition =====
   // header
   const headerProps = {
