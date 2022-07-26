@@ -11,7 +11,8 @@ import './App.css';
 
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
-// Image Path
+
+// Image web API
 const imageURL = "https://api.imgflip.com/get_memes";
 // Imgflip API interface
 interface ImgflipResponse extends Response {
