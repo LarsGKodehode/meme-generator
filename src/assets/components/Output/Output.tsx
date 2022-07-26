@@ -6,7 +6,6 @@ interface OutputProps {
   textTop: string,
   textBottom: string,
   imageURL: string,
-  memeAlt: string,
 };
 
 

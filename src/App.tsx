@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, ComponentState, EffectCallback, useEffect, useState, StrictMode } from 'react';
+import { BaseSyntheticEvent, ComponentState, useEffect, useState, StrictMode } from 'react';
 
 // Components
 import Header from './assets/components/header/Header';
@@ -12,6 +12,8 @@ import './App.css';
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
 
+
+// ===== External API calling =====
 // Image web API
 const imageURL = "https://api.imgflip.com/get_memes";
 // Imgflip API interface
@@ -82,11 +84,11 @@ function App() {
   };
 
   // Output
+  console.log(imageData)
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
     imageURL: imageData,
-    memeAlt: `ES6 might be hard to learn, but there exists stuff that's harder`,
   };
 
   // Input
