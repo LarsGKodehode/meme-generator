@@ -49,7 +49,7 @@ function Input(props: InputProps) {
       className={
         [styles['input-wrapper'],
           'font-large',
-        ].join(' '),
+        ].join(' ')
       }>
 
       <TextInput {...textInputPropsTop}/>
