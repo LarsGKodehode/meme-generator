@@ -9,7 +9,6 @@ import Input from './assets/components/Input/Input';
 // CSS
 import './App.css';
 
-
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
 // Image Path
