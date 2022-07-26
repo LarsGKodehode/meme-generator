@@ -5,10 +5,14 @@
  * @param Integer 
  */
 class randomInt {
-  private state: number;
+  private _state: number;
 
   constructor(seed: number) {
-    this.state = seed;
+    this._state = seed;
+  };
+
+  public get state() {
+    return this._state;
   };
 
   /**
@@ -18,12 +22,12 @@ class randomInt {
    * might be slower in some browsers (Chrome)
    * @link https://stackoverflow.com/questions/1908492/unsigned-integer-in-javascript
    */
-  next(): void {
+  public next(): void {
     let x = this.state;
     x ^= x << 13;
     x ^= x >> 17;
     x ^= x << 5;
-    this.state = x;
+    this._state = x;
   };
 };
 
