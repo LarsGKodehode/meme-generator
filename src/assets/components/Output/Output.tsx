@@ -15,7 +15,6 @@ function Output(props: OutputProps) {
     textTop,
     textBottom,
     imageURL,
-    memeAlt,
   } = props;
 
   // DOM
