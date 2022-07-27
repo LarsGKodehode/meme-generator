@@ -1,7 +1,7 @@
 .button-wrapper {
   /* Form */
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--spacing-small);
 
   /* Color */
   background-color: var(--palette-neutral-500);
