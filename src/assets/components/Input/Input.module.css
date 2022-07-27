@@ -1,5 +1,8 @@
 .input-wrapper {
   /* Self placement */
+  grid-row: 3 / 4;
+
+  /* Self placement */
   justify-self: flex-end;
   margin-top: auto;
 

@@ -1,4 +1,7 @@
 .output-wrapper {
+  /* Self placement */
+  grid-row: 2 / 3;
+
   /* Content display */
   display: flex;
   flex-direction: column;
@@ -8,7 +11,6 @@
   /* Form */
   width: 100%;
   height: auto;
-  max-height: 65vh; /* this makes the responsiveness of the page better */
   flex-grow: 3;
 
   /* Colors */

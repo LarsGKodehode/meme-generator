@@ -1,7 +1,9 @@
 .App {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 5em auto 20em;
 
   /* Temp fix to scale site to smaller devices */
   min-width: 410px;
+  height: 100%;
 }

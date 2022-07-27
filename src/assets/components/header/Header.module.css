@@ -1,4 +1,7 @@
 .header-wrapper {
+  /* Self placement */
+  grid-row: 1 / 2;
+
   /* Content display */
   display: flex;
   justify-content: center;
