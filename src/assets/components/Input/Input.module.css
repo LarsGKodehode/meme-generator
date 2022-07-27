@@ -10,6 +10,7 @@
   /* Form */
   width: 100%;
   max-width: 100%;
+  max-height: 8em;
   padding: var(--spacing-small) var(--spacing-medium) var(--spacing-huge);
   flex-grow: 1;
 

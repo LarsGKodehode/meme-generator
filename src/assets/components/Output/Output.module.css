@@ -8,6 +8,7 @@
   /* Form */
   width: 100%;
   height: auto;
+  flex-grow: 1;
 
   /* Colors */
   background-color: var(--palette-primary-500);
