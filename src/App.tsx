@@ -69,7 +69,6 @@ function App() {
   function handleNewImages(response: ImgflipResponse): void {
     if(response.success) {
       setAllMemes((previousMemes): any => {
-        console.log(response)
         return {
           ...previousMemes,
           allMemes: response.data.memes,
