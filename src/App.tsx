@@ -76,7 +76,6 @@ function App() {
       });
     };
   };
-  console.dir(allMemes)
 
   function handleSubmit(event: BaseSyntheticEvent) {
     event.preventDefault();
