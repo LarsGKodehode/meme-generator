@@ -1,5 +1,5 @@
 // React
-import { BaseSyntheticEvent, ChangeEventHandler, ComponentState, FormEventHandler } from 'react';
+import { ChangeEventHandler, ComponentState, FormEventHandler } from 'react';
 
 // Components
 import TextInput from '../subComponents/textInput/TextInput';
