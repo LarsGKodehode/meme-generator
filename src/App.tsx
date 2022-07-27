@@ -47,7 +47,7 @@ function App() {
   const [allMemes, setAllMemes] = useState<MemeState>(
     {
       allMemes: [],
-      currentMemeUrl: "http://i.imgflip.com/1bij.jpg",
+      currentMemeUrl: "https://i.imgflip.com/1bij.jpg",
     }
   );
 
