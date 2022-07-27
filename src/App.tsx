@@ -20,17 +20,19 @@ const imageURL = "https://api.imgflip.com/get_memes";
 // Imgflip API interface
 interface ImgflipResponse extends Response {
   success: boolean,
-  data: Memes,
+  data: {memes: Meme[]},
 };
-interface Memes {
-  memes: [
-    id: string,
-    name: string,
-    url: string,
-    width: number,
-    height: number,
-    box_count: number
-  ]
+interface MemeState {
+  allMemes: Meme[],
+  currentMemeUrl: string,
+};
+interface Meme {
+  id: string,
+  name: string,
+  url: string,
+  width: number,
+  height: number,
+  box_count: number
 };
 
 
@@ -43,9 +45,10 @@ function App() {
       textInputBottom: "",
     }
   );
-  const [imageData, setImageData] = useState(
+  const [allMemes, setAllMemes] = useState<MemeState>(
     {
-      imageData: [],
+      allMemes: [],
+      currentMemeUrl: "http://i.imgflip.com/1bij.jpg",
     }
   );
 
@@ -59,6 +62,7 @@ function App() {
     });
   };
 
+  // Initial image fetch
   useEffect(() => {
     fetch(imageURL)
       .then((response => response.json()))
@@ -69,8 +73,28 @@ function App() {
 
   function handleNewImages(response: ImgflipResponse): void {
     if(response.success) {
-      setImageData((): any => response.data.memes)
-    }
+      setAllMemes((previousMemes): any => {
+        return {
+          ...previousMemes,
+          allMemes: response.data.memes,
+        };
+      });
+    };
+  };
+
+  function handleSubmit(event: BaseSyntheticEvent) {
+    event.preventDefault();
+    setAllMemes((previousState) => {
+      return {
+        ...previousState,
+        currentMemeUrl: getNewMemeUrl(),
+      }
+    });
+  };
+
+  function getNewMemeUrl(): string {
+    const newMemeUrl = allMemes.allMemes[Math.floor(Math.random() * allMemes.allMemes.length)].url;
+    return newMemeUrl;
   };
 
   
@@ -85,18 +109,17 @@ function App() {
   };
 
   // Output
-  console.log(imageData)
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
-    imageURL: "",
-    // imageData[i].url
+    imageURL: allMemes.currentMemeUrl,
   };
 
   // Input
   const inputProps = {
     handleInput: handleStateChange,
-    data: data
+    handleSubmit: handleSubmit,
+    data: allMemes.currentMemeUrl,
   };
   
   return (

@@ -8,7 +8,6 @@ interface OutputProps {
   imageURL: string,
 };
 
-
 // COMPONENT
 function Output(props: OutputProps) {
   const {
