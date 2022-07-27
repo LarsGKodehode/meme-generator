@@ -24,15 +24,15 @@ interface ImgflipResponse extends Response {
 };
 interface MemeState {
   allMemes: Meme[],
-  currentMemeUrl: String,
+  currentMemeUrl: string,
 };
 interface Meme {
-  id: String,
-  name: String,
-  url: String,
-  width: Number,
-  height: Number,
-  box_count: Number
+  id: string,
+  name: string,
+  url: string,
+  width: number,
+  height: number,
+  box_count: number
 };
 
 
@@ -92,7 +92,7 @@ function App() {
     });
   };
 
-  function getNewMemeUrl(): String {
+  function getNewMemeUrl(): string {
     const newMemeUrl = allMemes.allMemes[Math.floor(Math.random() * allMemes.allMemes.length)].url;
     return newMemeUrl;
   };
