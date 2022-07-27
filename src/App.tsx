@@ -11,6 +11,7 @@ import './App.css';
 
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
+import { randomInt } from './libs/utility';
 
 
 // ===== External API calling =====
