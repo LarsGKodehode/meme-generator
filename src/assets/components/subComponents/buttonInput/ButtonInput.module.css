@@ -1,6 +1,6 @@
 .button-wrapper {
   /* Form */
-  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-tiny) var(--spacing-small);
   border-radius: var(--spacing-small);
 
   /* Color */
@@ -20,8 +20,8 @@
 
 .button-wrapper:active {
   /* Move text */
-  transform: translateY(var(--spacing-small));
+  transform: translateY(calc(var(--spacing-tiny) / 2));
 
   /* Effect */
-  box-shadow: inset 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }

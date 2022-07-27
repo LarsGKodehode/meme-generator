@@ -1,6 +1,6 @@
 .text-input-wrapper {
   /* Form */
-  padding: var(--spacing-small) var(--spacing-medium);
+  padding: var(--spacing-small) var(--spacing-small);
   border-radius: var(--spacing-small);
 
   /* Font size */
