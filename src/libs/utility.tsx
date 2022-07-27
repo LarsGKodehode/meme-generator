@@ -1,9 +1,8 @@
 interface ParametersRandomInt {
   seed: number,
   min?: number,
-  max?: number
+  max?: number,
 };
-
 
 class randomInt {
   #state: number;
@@ -13,17 +12,27 @@ class randomInt {
   /**
    * Fully deterministic prng, with seed, min value, max value
    * Uses a simple xorshift algorithm
-   * @param seed takes a starter seed
-   * 
-   * @param Integer 
+   * @param parameters require min < max
    */
   constructor(parameters: ParametersRandomInt) {
     this.#state = parameters.seed;
-    this.next; // gets random number rather than initial seed
+    if((parameters.min && parameters.max) && (parameters.min < parameters.max)) {
+      this.#min = parameters.min;
+      this.#max = parameters.max;
+    };
+
+    // gets random number rather than initial seed
+    this.next;
   };
 
   public get number() {
-    return this.#state;
+    let newNumber = Math.abs(this.#state);
+
+    // fits number into given range
+    newNumber = newNumber % (this.#max - this.#min);
+    newNumber = newNumber + this.#min;
+
+    return newNumber;
   };
 
   
@@ -38,7 +47,7 @@ class randomInt {
     x ^= x >> 17;
     x ^= x << 5;
     this.#state = x;
-    return this.#state;
+    return this.number;
   };
 };
 

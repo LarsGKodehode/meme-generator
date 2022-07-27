@@ -11,7 +11,6 @@ import './App.css';
 
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
-import { randomInt } from './libs/utility';
 
 
 // ===== External API calling =====
@@ -89,7 +88,8 @@ function App() {
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
-    imageURL: imageData,
+    imageURL: "",
+    // imageData[i].url
   };
 
   // Input
@@ -97,11 +97,6 @@ function App() {
     handleInput: handleStateChange,
     data: data
   };
-
-  const randNum = new randomInt({seed: 10, min: 10, max: 20});
-  console.log(randNum);
-  randNum.next();
-
   
   return (
   <StrictMode>
