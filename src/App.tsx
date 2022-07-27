@@ -85,12 +85,16 @@ function App() {
   function handleSubmit(event: BaseSyntheticEvent) {
     event.preventDefault();
     setAllMemes((previousState) => {
-      const newMemeUrl = allMemes.allMemes[Math.floor(Math.random() * allMemes.allMemes.length)].url;
       return {
         ...previousState,
-        currentMemeUrl: newMemeUrl,
+        currentMemeUrl: getNewMemeUrl(),
       }
     });
+  };
+
+  function getNewMemeUrl(): String {
+    const newMemeUrl = allMemes.allMemes[Math.floor(Math.random() * allMemes.allMemes.length)].url;
+    return newMemeUrl;
   };
 
   
