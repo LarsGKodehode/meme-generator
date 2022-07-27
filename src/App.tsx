@@ -20,17 +20,15 @@ const imageURL = "https://api.imgflip.com/get_memes";
 // Imgflip API interface
 interface ImgflipResponse extends Response {
   success: boolean,
-  data: Memes,
+  data: {memes: Memes[]},
 };
 interface Memes {
-  memes: [
-    id: string,
-    name: string,
-    url: string,
-    width: number,
-    height: number,
-    box_count: number
-  ]
+  id: string,
+  name: string,
+  url: string,
+  width: number,
+  height: number,
+  box_count: number
 };
 
 
@@ -43,9 +41,10 @@ function App() {
       textInputBottom: "",
     }
   );
-  const [imageData, setImageData] = useState(
+  const [allMemes, setAllMemes] = useState(
     {
-      imageData: [],
+      allMemes: [],
+      currentMemeUrl: "",
     }
   );
 
@@ -69,9 +68,16 @@ function App() {
 
   function handleNewImages(response: ImgflipResponse): void {
     if(response.success) {
-      setImageData((): any => response.data.memes)
-    }
+      setAllMemes((previousMemes): any => {
+        console.log(response)
+        return {
+          ...previousMemes,
+          allMemes: response.data.memes,
+        };
+      });
+    };
   };
+  console.dir(allMemes)
 
   function handleSubmit(event: BaseSyntheticEvent) {
     event.preventDefault();
@@ -92,8 +98,7 @@ function App() {
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
-    imageURL: "",
-    // imageData[i].url
+    imageURL: allMemes.currentMemeUrl,
   };
 
   // Input
