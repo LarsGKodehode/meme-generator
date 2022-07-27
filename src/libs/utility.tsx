@@ -1,14 +1,23 @@
+interface ParametersRandomInt {
+  seed: number,
+  min?: number,
+  max?: number
+};
+
 /**
- * Fully deterministic prng, with seed
+ * Fully deterministic prng, with seed, min value, max value
  * Uses a simple xorshift algorithm
  * @param seed takes a starter seed
+ * 
  * @param Integer 
  */
 class randomInt {
   private _state: number;
+  private _min: number = 0;
+  private _max: number = ((2**32) - 1);
 
-  constructor(seed: number) {
-    this._state = seed;
+  constructor(parameters: ParametersRandomInt) {
+    this._state = parameters.seed;
     this.next();
   };
 
