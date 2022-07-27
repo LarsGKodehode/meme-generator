@@ -11,10 +11,13 @@ interface ButtonCreateInfo {
 function Button(props: ButtonCreateInfo) {
   const {
     text,
-  } = props
+  } = props;
 
   return(
-    <input type='submit' value={text} className={styles['button-wrapper']} />
+    <input
+      type='submit'
+      value={text}
+      className={styles['button-wrapper']} />
   );
 };
 
