@@ -11,7 +11,6 @@ import './App.css';
 
 // SVG Path
 import svgURL from './assets/images/Peace.svg';
-import { randomInt } from './libs/utility';
 
 
 // ===== External API calling =====
@@ -48,7 +47,7 @@ function App() {
   const [allMemes, setAllMemes] = useState<MemeState>(
     {
       allMemes: [],
-      currentMemeUrl: "",
+      currentMemeUrl: "http://i.imgflip.com/1bij.jpg",
     }
   );
 
