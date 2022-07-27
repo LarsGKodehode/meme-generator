@@ -30,7 +30,7 @@ class randomInt {
    * Auto casts "numbers"(64bit floats) to 32bit integers
    * Some further reading and it turns out that bitwise operation
    * might be slower in some browsers (Chrome)
-   * @link https://stackoverflow.com/questions/1908492/unsigned-integer-in-javascript
+   * @link https://stackoverflow.com/a/1909320
    */
   public next(): void {
     let x = this.state;

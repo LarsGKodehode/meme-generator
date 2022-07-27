@@ -98,6 +98,10 @@ function App() {
     data: data
   };
 
+  const randNum = new randomInt({seed: 10, min: 10, max: 20});
+  console.log(randNum);
+  randNum.next();
+
   
   return (
   <StrictMode>
