@@ -20,15 +20,19 @@ const imageURL = "https://api.imgflip.com/get_memes";
 // Imgflip API interface
 interface ImgflipResponse extends Response {
   success: boolean,
-  data: {memes: Memes[]},
+  data: {memes: Meme[]},
 };
-interface Memes {
-  id: string,
-  name: string,
-  url: string,
-  width: number,
-  height: number,
-  box_count: number
+interface MemeState {
+  allMemes: Meme[],
+  currentMemeUrl: String,
+};
+interface Meme {
+  id: String,
+  name: String,
+  url: String,
+  width: Number,
+  height: Number,
+  box_count: Number
 };
 
 
@@ -41,7 +45,7 @@ function App() {
       textInputBottom: "",
     }
   );
-  const [allMemes, setAllMemes] = useState(
+  const [allMemes, setAllMemes] = useState<MemeState>(
     {
       allMemes: [],
       currentMemeUrl: "",
@@ -58,6 +62,7 @@ function App() {
     });
   };
 
+  // Initial image fetch
   useEffect(() => {
     fetch(imageURL)
       .then((response => response.json()))
@@ -79,6 +84,13 @@ function App() {
 
   function handleSubmit(event: BaseSyntheticEvent) {
     event.preventDefault();
+    setAllMemes((previousState) => {
+      const newMemeUrl = allMemes.allMemes[Math.floor(Math.random() * allMemes.allMemes.length)].url;
+      return {
+        ...previousState,
+        currentMemeUrl: newMemeUrl,
+      }
+    });
   };
 
   
@@ -103,7 +115,7 @@ function App() {
   const inputProps = {
     handleInput: handleStateChange,
     handleSubmit: handleSubmit,
-    data: data
+    data: allMemes.currentMemeUrl,
   };
   
   return (
