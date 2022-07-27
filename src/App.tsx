@@ -89,7 +89,8 @@ function App() {
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
-    imageURL: imageData,
+    imageURL: "",
+    // imageData[i].url
   };
 
   // Input
@@ -97,7 +98,6 @@ function App() {
     handleInput: handleStateChange,
     data: data
   };
-
   
   return (
   <StrictMode>
