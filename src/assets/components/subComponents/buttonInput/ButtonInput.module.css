@@ -1,26 +1,28 @@
 .button-wrapper {
   /* Form */
-  padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  padding: var(--spacing-tiny) var(--spacing-small);
+  border-radius: var(--spacing-small);
 
   /* Color */
+  color: var(--palette-white);
   background-color: var(--palette-neutral-500);
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 
   /* Font */
   font-size: inherit;
 }
 
-.button-wrapper:hover {
-  /* Effect */
-  border-color: var(--palette-white);
-  filter: drop-shadow(0px 0px 20px var(--palette-success-500));
+@media (any-hover) {.button-wrapper:hover {
+    /* Effect */
+    border-color: var(--palette-white);
+    filter: drop-shadow(0px 0px 20px var(--palette-success-500));
+  }
 }
 
 .button-wrapper:active {
   /* Move text */
-  transform: translateY(var(--spacing-small));
+  transform: translateY(calc(var(--spacing-tiny) / 2));
 
   /* Effect */
-  box-shadow: inset 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
