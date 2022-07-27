@@ -73,6 +73,10 @@ function App() {
     }
   };
 
+  function handleSubmit(event: BaseSyntheticEvent) {
+    event.preventDefault();
+  };
+
   
   // ===== Props definition =====
   // header
@@ -85,7 +89,6 @@ function App() {
   };
 
   // Output
-  console.log(imageData)
   const outputProps = {
     textTop: data.textInputTop,
     textBottom: data.textInputBottom,
@@ -96,6 +99,7 @@ function App() {
   // Input
   const inputProps = {
     handleInput: handleStateChange,
+    handleSubmit: handleSubmit,
     data: data
   };
   
