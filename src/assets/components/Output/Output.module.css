@@ -1,7 +1,4 @@
 .output-wrapper {
-  /* Self placement */
-  grid-row: 2 / 3;
-
   /* Content display */
   display: flex;
   flex-direction: column;
@@ -11,7 +8,6 @@
   /* Form */
   width: 100%;
   height: auto;
-  flex-grow: 3;
 
   /* Colors */
   background-color: var(--palette-primary-500);
