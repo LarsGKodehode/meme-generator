@@ -23,14 +23,15 @@ function Text(props: TextInputCreateInfo) {
   } = props;
 
   return(
-    <textarea
+    <input
+      type="text"
       name={name}
       placeholder={placeholder}
       className={styles['text-input-wrapper']}
       onChange={handleInput}
       value={data[name]}
     >
-    </textarea>
+    </input>
   );
 };
 
