@@ -1,4 +1,4 @@
-[![Git Pages](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml/badge.svg?branch=gh-pages&event=page_build)](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml)
+[![Git Pages](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml/badge.svg?branch=main&event=page_build)](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml)
 
 A simple meme generator implemented as a single page app utilizing React and built using Vite
 
