@@ -1,7 +1,4 @@
 .App {
   display: flex;
   flex-direction: column;
-
-  /* Temp fix to scale site to smaller devices */
-  min-width: 410px;
 }

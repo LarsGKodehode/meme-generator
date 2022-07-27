@@ -9,7 +9,6 @@ import App from './App';
 import './assets/css/global.css';
 import './assets/css/palettes.css';
 import './assets/css/typography.css';
-import './index.css';
 // Fonts
 import './assets/fonts/StintUltraCondensed-Regular.ttf';
 

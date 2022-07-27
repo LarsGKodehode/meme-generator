@@ -1,7 +1,6 @@
 .input-wrapper {
-  /* Self placement */
+  /* Self Placement */
   justify-self: flex-end;
-  margin-top: auto;
 
   /* Content display */
   display: flex;
@@ -11,6 +10,7 @@
   /* Form */
   width: 100%;
   max-width: 100%;
+  max-height: 8em;
   padding: var(--spacing-small) var(--spacing-medium) var(--spacing-huge);
   flex-grow: 1;
 
