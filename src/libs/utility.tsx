@@ -4,40 +4,41 @@ interface ParametersRandomInt {
   max?: number
 };
 
-/**
- * Fully deterministic prng, with seed, min value, max value
- * Uses a simple xorshift algorithm
- * @param seed takes a starter seed
- * 
- * @param Integer 
- */
+
 class randomInt {
-  private _state: number;
-  private _min: number = 0;
-  private _max: number = ((2**32) - 1);
-
-  constructor(parameters: ParametersRandomInt) {
-    this._state = parameters.seed;
-    this.next();
-  };
-
-  public get state() {
-    return this._state;
-  };
+  #state: number;
+  #min: number = 0;
+  #max: number = ((2**32) - 1);
 
   /**
-   * bitwise operation in Javascript or Typescript
-   * Auto casts "numbers"(64bit floats) to 32bit integers
-   * Some further reading and it turns out that bitwise operation
-   * might be slower in some browsers (Chrome)
-   * @link https://stackoverflow.com/a/1909320
+   * Fully deterministic prng, with seed, min value, max value
+   * Uses a simple xorshift algorithm
+   * @param seed takes a starter seed
+   * 
+   * @param Integer 
    */
-  public next(): void {
-    let x = this.state;
+  constructor(parameters: ParametersRandomInt) {
+    this.#state = parameters.seed;
+    this.next; // gets random number rather than initial seed
+  };
+
+  public get number() {
+    return this.#state;
+  };
+
+  
+  // bitwise operation in Javascript or Typescript
+  // Auto casts "numbers"(64bit floats) to 32bit integers
+  // Some further reading and it turns out that bitwise operation
+  // might be slower in some browsers (Chrome)
+  // @link https://stackoverflow.com/a/1909320
+  public get next(): number {
+    let x = this.#state;
     x ^= x << 13;
     x ^= x >> 17;
     x ^= x << 5;
-    this._state = x;
+    this.#state = x;
+    return this.#state;
   };
 };
 
