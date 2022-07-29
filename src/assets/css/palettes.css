@@ -1,33 +1,30 @@
-/* ===== PALETTES CONSTANTS ===== */
-
+/* PALETTES CONSTANTS */
 :root {
-  --palette-success-500: #27B1E0;
+  --palette-success-500: #27B1E0; /* base success */
 
-  --palette-error-500: #E00E03;
+  --palette-warning-500: ; /* base warning */
 
-  --palette-neutral-500: #524C4C;
+  --palette-error-500: #E00E03; /* base error */
 
-  --palette-white: #FFFFFF;
+  --palette-neutral-500: #524C4C; /* base neutral */
 
-  --palette-black: #000000;
+  --palette-white: #FFFFFF; /* constant */
+
+  --palette-black: #000000; /* constant */
 }
 
-/* ===== PALETTE THEMES ===== */
-
-/* bright theme */
+/* PALETTE THEMES */
 .App[data-theme = "bright"] {
-  /* Primary */
-  --palette-primary-500: #180A1E;
+  /* bright theme */
+  --palette-primary-500: #180A1E; /* base */
 
-  --palette-primary-500-text: #00D0FD;
+  --palette-primary-500-text: #00D0FD; /* base */
   
-  /* Secondary */
-  --palette-secondary-500: #933BC9;
+  --palette-secondary-500: #933BC9; /* base */
   
-  --palette-secondary-500-text: #003340;
+  --palette-secondary-500-text: #003340; /* base */
   
-  /* Tertiary */
-  --palette-tertiary-500: #ADAB1F;
+  --palette-tertiary-500: #ADAB1F; /* base */
   
-  --palette-tertiary-500-text: #001820;
+  --palette-tertiary-500-text: #001820; /* base */
 }
