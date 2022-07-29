@@ -1,30 +1,33 @@
-/* PALETTES CONSTANTS */
+/* ===== PALETTES CONSTANTS ===== */
+
 :root {
-  --palette-success-500: #27B1E0; /* base success */
+  --palette-success-500: #27B1E0;
 
-  --palette-warning-500: ; /* base warning */
+  --palette-error-500: #E00E03;
 
-  --palette-error-500: #E00E03; /* base error */
+  --palette-neutral-500: #524C4C;
 
-  --palette-neutral-500: #524C4C; /* base neutral */
+  --palette-white: #FFFFFF;
 
-  --palette-white: #FFFFFF; /* constant */
-
-  --palette-black: #000000; /* constant */
+  --palette-black: #000000;
 }
 
-/* PALETTE THEMES */
-.App[data-theme = "bright"] {
-  /* bright theme */
-  --palette-primary-500: #180A1E; /* base */
+/* ===== PALETTE THEMES ===== */
 
-  --palette-primary-500-text: #00D0FD; /* base */
+/* bright theme */
+.App[data-theme = "bright"] {
+  /* Primary */
+  --palette-primary-500: #180A1E;
+
+  --palette-primary-500-text: #00D0FD;
   
-  --palette-secondary-500: #933BC9; /* base */
+  /* Secondary */
+  --palette-secondary-500: #933BC9;
   
-  --palette-secondary-500-text: #003340; /* base */
+  --palette-secondary-500-text: #003340;
   
-  --palette-tertiary-500: #ADAB1F; /* base */
+  /* Tertiary */
+  --palette-tertiary-500: #ADAB1F;
   
-  --palette-tertiary-500-text: #001820; /* base */
+  --palette-tertiary-500-text: #001820;
 }
