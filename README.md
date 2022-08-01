@@ -1,4 +1,4 @@
-[![Page-Build](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml/badge.svg?branch=gh-pages&event=deployment_status)](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml)
+[![Page-Build](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node/badge.svg?branch=gh-pages&event=deployment_status)](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml)
 
 [![Page-Build](https://github.com/LarsGKodehode/meme-generator/workflows/node/badge.svg?branch=gh-pages&event=deployment_status)](https://github.com/LarsGKodehode/meme-generator/actions/workflows/node.js.yml)
 
